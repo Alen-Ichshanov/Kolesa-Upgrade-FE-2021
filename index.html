@@ -8,6 +8,94 @@
   </head>
   <body>
     <div id="app"></div>
+<button id="button-modal" class="button">Modal Window</button>
+
+<div id="modal-window" class="modal">
+  <div class="modal-content">
+    <img src="src/assets/close-big.svg" alt="" class="close">
+    <div class="container content-container">
+        <div class="container image-container">
+            <div class="main-img">
+                <img src="src/assets/main-img.png" alt="Фото толстовки от Qazaq Republic">
+            </div>
+            <div>
+                <img src="src/assets/preview-1.png" class="preview-img" alt="Фото девушки в толстовке от Qazaq Republic">
+                <img src="src/assets/preview-2.png" class="preview-img active" alt="Фото толстовки от Qazaq Republic">
+                <img src="src/assets/preview-3.png" class="preview-img" alt="Фото парня в толстовке от Qazaq Republic">
+            </div>
+        </div>
+        <div class="container details-container">
+            <div class="container required-container">
+                <div class="container info-container">
+                    <span class="title">Толстовка "Эволюционируй или сдохни"</span>
+                    <span class="title bold-txt">100 баллов</span>
+                    <button class="button">Заказать</button>
+                </div>
+                <div class="balance">
+                    <div class="balance-info">
+                        <span class="txt your-txt">Твой баланс:</span><br>
+                        <span class="balance-num">3945 баллов</span>
+                    </div>
+                    <div class="balance-icon">
+                        <img src="src/assets/balance-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="addons-container">
+                <div class="color-details addon">
+                    <span class="txt">Цвета:</span>
+                    <div class="container radio-container">
+                        <label for="color1" class="txt label-container">Синий
+                            <input type="radio" id="color1" name="color" value="blue">
+                            <span class="checkmark blue"></span>
+                            <span class="back"></span>
+                        </label>
+                        <label for="color2" class="txt label-container">Бежевый
+                            <input type="radio" id="color2" name="color" value="beige">
+                            <span class="checkmark beige"></span>
+                            <span class="back"></span>
+                        </label>
+                        <label for="color3" class="txt label-container">Серый
+                            <input type="radio" id="color3" name="color" value="grey">
+                            <span class="checkmark grey"></span>
+                            <span class="back"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="size-details addon">
+                    <span class="txt">Размер:</span>
+                    <div class="container radio-container">
+                        <label for="size1" class="txt label-container">S
+                            <input type="radio" id="size1" name="size" value="small">
+                            <span class="checkmark"></span>
+                            <span class="back"></span>
+                        </label>
+                        <label for="size2" class="txt label-container">M
+                            <input type="radio" id="size2" name="size" value="medium">
+                            <span class="checkmark"></span>
+                            <span class="back"></span>
+                        </label>
+                        <label for="size3" class="txt label-container">L
+                            <input type="radio" id="size3" name="size" value="large">
+                            <span class="checkmark"></span>
+                            <span class="back"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="description addon" >
+                    <span class="txt bold-txt">Детали:</span><br>
+                    <span class="txt">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</span>
+                </div>
+                <div class="hints addon">
+                    <span class="txt bold-txt">Как выбрать размер:</span><br>
+                    <span class="txt">Написать дяде Рику для уточнения.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
