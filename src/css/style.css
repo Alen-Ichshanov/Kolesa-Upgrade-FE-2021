@@ -103,7 +103,7 @@ body {
     width: 400px;
 }
 
-div.info-container > * {
+div.info-container > .title {
     margin-bottom: 8px;
 }
 
