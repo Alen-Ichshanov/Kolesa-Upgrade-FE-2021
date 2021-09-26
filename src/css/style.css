@@ -51,12 +51,18 @@ body {
 .close {
     position: absolute;
     color: #aaa;
-    width: 32px;
-    height: 32px;
     right: 25px;
     top: 24px;
     font-size: 28px;
-    font-weight: bold;
+    border: none;
+    background-color: #fff;
+}
+
+.close::after {
+    display: inline-block;
+    content: '\00d7';
+    width: 32px;
+    height: 32px;
 }
 
 .close:hover,
@@ -91,18 +97,22 @@ body {
 
 .info-container {
     flex-direction: column;
-    justify-content: space-between;
     line-height: 32px;
     font-size: 20px;
     align-items: flex-start;
     padding: 0;
-    height: 116px;
+    width: 400px;
+}
+
+div.info-container > * {
+    margin-bottom: 8px;
 }
 
 .title {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    margin: 0;
 }
 
 .txt,
@@ -111,6 +121,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 4px;
+    margin-top: 0;
 }
 
 .bold-txt {
@@ -149,8 +160,6 @@ body {
 }
 
 .balance {
-    position: absolute;
-    left: 787px;
     align-self: flex-end;
     display: flex;
     background-color: #f0fafd;

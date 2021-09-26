@@ -3,9 +3,9 @@ import '../css/style.css';
 document.querySelector('#app').innerHTML = `
   <h1>Hello, Ален Ищанов!</h1>
 `;
-const modal = document.getElementById('modal-window');
-const btn = document.getElementById('button-modal');
-const span = document.getElementsByClassName('close')[0];
+const modal = document.querySelector('#modal-window');
+const btn = document.querySelector('#button-modal');
+const span = document.querySelector('.close');
 
 btn.onclick = function () {
     modal.style.display = 'block';
