@@ -97,16 +97,16 @@
         <img src="src/assets/kolesa-vector.svg" alt="Логотип Kolesa Group">
         <div class="search-container">
             <form action="/" method="GET" class="form">
-                <img src="src/assets/search.svg" alt="Иконка лупы" class="search-icon">
+                <button type="button" class="search-icon"></button>
                 <input type="search" placeholder="Поиск" class="search-field">
             </form>
           </div>
         <a class="user" href="#">
             <img src="src/assets/user.png" alt="Аватар пользователя" class="user-photo">
-            <div class="user-info">
-                <h2 class="txt user-name">Мортиджан</h2>
-                <p class="txt user-points">300 баллов</p>
-            </div>
+            <span class="user-info">
+                <span class="txt user-name">Мортиджан</span>
+                <span class="txt user-points">300 баллов</span>
+            </span>
         </a>
     </header>
     <main class="main">
@@ -130,21 +130,21 @@
             <div class="points-container">
                 <button type="button" class="points-button">
                     <img src="src/assets/plus.png" alt="Иконка плюса" class="points-img">
-                    <h2>Получить баллы</h2>
+                    <p class="points-txt">Получить баллы</p>
                 </button>
                 <button type="button" class="points-button">
                     <img src="src/assets/quesmark.png" alt="Иконка вопроса" class="points-img">
-                    <h2>Как получить баллы</h2>
+                    <p class="points-txt">Как получить баллы</p>
                 </button>
                 <button type="button" class="points-button">
                     <img src="src/assets/gift.png" alt="Иконка подарка" class="points-img">
-                    <h2>Подарить баллы</h2>
+                    <p class="points-txt">Подарить баллы</p>
                 </button>
             </div>
             <div class="shop-container">
                 <div class="tabs-container">
                     <label for="tab1" class="txt label-container">
-                        <input type="radio" id="tab1" name="tab" value="all">
+                        <input type="radio" id="tab1" name="tab" value="all" checked>
                         <span class="back">Все товары</span>
                     </label>
                     <label for="tab2" class="txt label-container">
@@ -157,58 +157,72 @@
                     </label>
                 </div>
                 <div class="product-container">
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <span class="new-label">NEW</span>
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <span class="new-label">NEW</span>
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <img src="src/assets/product.png" alt="Фото товара">
-                        <div class="product-desc">
-                            <div class="product-price">220 баллов</div>
-                            <h2 class="product-title">Футболка "Эволюционируй или сдохни"</h2>
-                            <p class="product-size">Размеры S/M/L</p>
-                            <button class="button product-button">Заказать</button>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
                         </div>
                     </div>
                 </div>
