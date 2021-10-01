@@ -7,12 +7,11 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <button id="button-modal" class="button" type="button">Modal Window</button>
+    <!--<button id="button-modal" class="button" type="button">Modal Window</button>
     <div id="modal-window" class="modal" style="display: none;">
-    <div class="modal-content">
-    <button class="close"></button>
-    <div class="container content-container">
+        <div class="modal-content">
+            <button class="close"></button>
+            <div class="container content-container">
         <div class="container image-container">
             <div class="main-img">
                 <img src="src/assets/main-img.png" alt="Фото толстовки от Qazaq Republic">
@@ -26,7 +25,7 @@
         <div class="container details-container">
             <div class="container required-container">
                 <div class="container info-container">
-                    <h3 class="title">Толстовка "Эволюционируй или сдохни"</h3>
+                    <h2 class="title">Толстовка "Эволюционируй или сдохни"</h2>
                     <span class="title bold-txt">100 баллов</span>
                     <button class="button">Заказать</button>
                 </div>
@@ -82,19 +81,171 @@
                     </div>
                 </div>
                 <div class="description addon" >
-                    <h3 class="txt bold-txt">Детали:</h3>
+                    <h2 class="txt bold-txt">Детали:</h2>
                     <p class="txt">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%</p>
                 </div>
                 <div class="hints addon">
-                    <h3 class="txt bold-txt">Как выбрать размер:</h3>
+                    <h2 class="txt bold-txt">Как выбрать размер:</h2>
                     <p class="txt">Написать дяде Рику для уточнения.</p>
                 </div>
             </div>
         </div>
-    </div>
-  </div>
-
-</div>
+            </div>
+        </div>
+    </div>-->
+    <header class="header">
+        <img src="src/assets/kolesa-vector.svg" alt="Логотип Kolesa Group">
+        <div class="search-container">
+            <form action="/" method="GET" class="form">
+                <button type="button" class="search-icon"></button>
+                <input type="search" placeholder="Поиск" class="search-field">
+            </form>
+          </div>
+        <a class="user" href="#">
+            <img src="src/assets/user.png" alt="Аватар пользователя" class="user-photo">
+            <span class="user-info">
+                <span class="txt user-name">Мортиджан</span>
+                <span class="txt user-points">300 баллов</span>
+            </span>
+        </a>
+    </header>
+    <main class="main">
+        <nav class="menu-nav">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#" class="menu-link">Оргсхема</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Kolesa Team</a></li>
+                <li class="menu-item"><a href="#" class="menu-link selected-menu-link">Kolesa Shop</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Картина компании</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Новости</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Education</a></li>
+                <li class="menu-item"><a href="#" class="menu-link"> Guidelines</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Библиотека</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="main-container">
+            <div class="banner-container">
+                <img src="src/assets/banner.png" alt="Баннер с акциями">
+            </div>
+            <div class="points-container">
+                <button type="button" class="points-button">
+                    <img src="src/assets/plus.png" alt="Иконка плюса" class="points-img">
+                    <p class="points-txt">Получить баллы</p>
+                </button>
+                <button type="button" class="points-button">
+                    <img src="src/assets/quesmark.png" alt="Иконка вопроса" class="points-img">
+                    <p class="points-txt">Как получить баллы</p>
+                </button>
+                <button type="button" class="points-button">
+                    <img src="src/assets/gift.png" alt="Иконка подарка" class="points-img">
+                    <p class="points-txt">Подарить баллы</p>
+                </button>
+            </div>
+            <div class="shop-container">
+                <div class="tabs-container">
+                    <label for="tab1" class="txt label-container">
+                        <input type="radio" id="tab1" name="tab" value="all" checked>
+                        <span class="back">Все товары</span>
+                    </label>
+                    <label for="tab2" class="txt label-container">
+                        <input type="radio" id="tab2" name="tab" value="clothes">
+                        <span class="back">Одежда</span>
+                    </label>
+                    <label for="tab3" class="txt label-container">
+                        <input type="radio" id="tab3" name="tab" value="accessories">
+                        <span class="back">Аксессуары</span>
+                    </label>
+                </div>
+                <div class="product-container">
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <span class="new-label">NEW</span>
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <span class="new-label">NEW</span>
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-wrap">
+                        <div class="product-card">
+                            <img src="src/assets/product.png" alt="Фото товара">
+                            <div class="product-desc">
+                                <div class="product-price">220 баллов</div>
+                                <h4 class="product-title">Футболка "Эволюционируй или сдохни"</h4>
+                                <p class="product-size">Размеры S/M/L</p>
+                                <button class="button product-button">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer-info">
+                <p class="footer-kolesa">© Kolesa Group</p>
+                <div class="footer-icons">
+                    <a href="#"><img src="src/assets/Instagram.svg" alt="Иконка Instagram"></a>
+                    <a href="#"><img src="src/assets/YouTube.svg" alt="Иконка YouTube"></a>
+                    <a href="#"><img src="src/assets/VK.svg" alt="Иконка VKontakte"></a>
+                </div>
+            </div>
+            <div class="footer-wrap">
+                <div class="footer-questions">
+                    <p>Есть идеи что улучшить?</p>
+                    <p>Не знаешь, с кем решить проблему?</p>
+                </div>
+                <button type="button" class="footer-button">Написать</button>
+            </div>
+        </footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
