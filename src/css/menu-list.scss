@@ -1,0 +1,41 @@
+.menu-list {
+    list-style: none;
+    padding: 0;
+
+    &__menu-item {
+        margin-bottom: 28px;
+    }
+
+    &__menu-link {
+        font-size: $font-size-16;
+        line-height: $line-height-24;
+        color: $base-black;
+        text-decoration: none;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 4px;
+            bottom: -4px;
+            left: 0;
+            background-color: $base-blue;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom right;
+        }
+
+        &_selected {
+            font-weight: $font-weight-600;
+            border-left: 4px solid $base-blue;
+            padding-left: 8px;
+            margin-left: -8px;
+        }
+    }
+}

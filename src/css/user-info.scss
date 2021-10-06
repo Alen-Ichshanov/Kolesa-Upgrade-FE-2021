@@ -1,0 +1,14 @@
+.user-info {
+    &__user-name {
+        font-weight: $font-weight-600;
+        line-height: $line-height-24;
+        font-size: $font-size-14;
+        color: $base-blue;
+        margin-bottom: 0;
+    }
+
+    &__user-points,
+    &__user-name {
+        margin-bottom: 0;
+    }
+}

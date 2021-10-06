@@ -1,0 +1,13 @@
+
+.header {
+    @include flex;
+
+    &__search-container {
+        margin-left: 66px;
+        width: 308px;
+    }
+
+    &__user {
+        margin-left: 584px;
+    }
+}

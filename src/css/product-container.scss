@@ -1,0 +1,12 @@
+.product-container {
+    @include flex;
+
+    flex-wrap: wrap;
+
+    &__product-card-wrap {
+        position: relative;
+        width: 330px;
+        height: 518px;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,24 @@
+.tabs-container {
+    @include flex;
+
+    &__label-container {
+        min-width: 100px;
+        height: 36px;
+        text-align: center;
+        justify-content: center;
+        color: $base-blue;
+        line-height: 36px;
+        transition: transform 0.5s;
+        margin-right: 8px;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 45px;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}

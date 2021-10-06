@@ -1,0 +1,11 @@
+.shop-container {
+    @include flex;
+    @include flex-column;
+
+    width: 100%;
+    height: 100%;
+
+    &__tabs-container {
+        margin-bottom: 16px;
+    }
+}

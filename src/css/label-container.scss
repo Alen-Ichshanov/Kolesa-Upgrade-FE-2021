@@ -1,0 +1,48 @@
+.label-container {
+    @include flex;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked ~ .label-container__back {
+            background-color: #d6ecfd;
+            color: #000;
+        }
+    }
+
+    &__back {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        border-radius: 8px;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__checkmark {
+        position: absolute;
+        left: 10px;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 4px;
+
+        &-size {
+            display: none;
+        }
+
+        &-blue {
+            background-color: $radio-blue;
+        }
+
+        &-beige {
+            background-color: $radio-beige;
+        }
+
+        &-grey {
+            background-color: $radio-grey;
+        }
+    }
+}

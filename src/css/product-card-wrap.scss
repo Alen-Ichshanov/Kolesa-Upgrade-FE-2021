@@ -1,0 +1,10 @@
+.product-card-wrap {
+    &__product-card {
+        position: absolute;
+        width: 330px;
+    }
+
+    &:not(:nth-child(3n)) {
+        margin-right: 24px;
+    }
+}

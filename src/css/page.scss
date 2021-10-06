@@ -1,0 +1,31 @@
+.page {
+    @include reset;
+    @include flex;
+    @include flex-column;
+
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+    &__main {
+        @include center-element;
+
+        width: 1440px;
+    }
+
+    &__header {
+        @include center-element;
+
+        width: 1440px;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        height: 48px;
+        align-items: center;
+    }
+
+    &__footer {
+        position: static;
+        bottom: 0;
+    }
+}

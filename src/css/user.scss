@@ -1,0 +1,31 @@
+
+.user {
+    @include flex;
+
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 1s ease-out;
+    background-color: #fff;
+    text-decoration: inherit;
+    color: inherit;
+
+    &:hover {
+        background-color: #e9f2fb;
+    }
+
+    &:visited {
+        text-decoration: inherit;
+        color: inherit;
+    }
+
+    &__user-info {
+        @include flex;
+        @include flex-column;
+    }
+
+    &__user-photo {
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+}
