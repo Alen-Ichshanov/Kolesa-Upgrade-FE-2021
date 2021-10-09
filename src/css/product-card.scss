@@ -1,12 +1,12 @@
 .product-card {
-    &__product-price {
+    &__price {
         font-weight: $font-weight-600;
         color: $base-blue;
         font-size: 24px;
         line-height: 36px;
     }
 
-    &__product-title {
+    &__title {
         font-weight: $font-weight-600;
         font-size: $font-size-16;
         line-height: $line-height-24;
@@ -31,24 +31,24 @@
         color: $base-white;
     }
 
-    &__product-desc {
+    &__description {
         padding: 16px;
         margin-right: 0;
     }
 
-    &__product-size {
+    &__size {
         font-weight: normal;
         font-size: $font-size-14;
         line-height: $line-height-24;
         color: $base-grey;
     }
 
-    &__product-button {
+    &__button {
         display: none;
         width: 100%;
     }
 
-    &:hover &__product-button {
+    &:hover &__button {
         display: block;
     }
 

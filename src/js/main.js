@@ -1,4 +1,3 @@
-// import '../css/style.css';
 import '../css/style.scss';
 
 const modal = document.querySelector('#modal-window');

@@ -1,5 +1,5 @@
 .points-container {
-    &__points-button {
+    &__button {
         width: 330px;
         height: 76px;
         border-radius: 16px;
@@ -29,11 +29,11 @@
         }
     }
 
-    &__points-img {
+    &__img {
         margin-right: 16px;
     }
 
-    &__points-txt {
+    &__txt {
         font-weight: $font-weight-600;
         font-size: 20px;
         line-height: 32px;
