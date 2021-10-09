@@ -1,0 +1,175 @@
+.modal {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    margin-top: 0;
+
+    &__modal-content {
+        background-color: $base-white;
+        margin: auto;
+        padding: 56px;
+        width: 1039px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 16px;
+    }
+
+    &__close {
+        position: absolute;
+        color: $base-grey;
+        right: 25px;
+        top: 24px;
+        font-size: 28px;
+        border: none;
+        background-color: $base-white;
+
+        &::after {
+            display: inline-block;
+            content: '\00d7';
+            width: 32px;
+            height: 32px;
+        }
+
+        &:hover,
+        &:focus {
+            color: $base-black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &__content-container {
+        @include flex;
+
+        justify-content: space-between;
+    }
+
+    &__details-container {
+        @include flex;
+        @include flex-column;
+
+        margin-top: 8px;
+    }
+
+    &__main-img {
+        margin-bottom: 16px;
+    }
+
+    &__image-container {
+        @include flex;
+        @include flex-column;
+
+        align-items: center;
+    }
+
+    &__required-container {
+        @include flex;
+
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__info-container {
+        @include flex;
+        @include flex-column;
+
+        line-height: 32px;
+        font-size: 20px;
+        align-items: flex-start;
+        padding: 0;
+        width: 400px;
+    }
+
+    &__title,
+    &__price {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__price {
+        font-weight: $font-weight-600;
+    }
+
+    &__balance-num {
+        font-size: $font-size-16;
+    }
+
+    &__radio-container {
+        @include flex;
+
+        margin-top: 8px;
+    }
+
+    &__addon {
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        max-width: 568px;
+    }
+
+    &__balance {
+        @include flex;
+
+        align-self: flex-end;
+        background-color: $base-sky;
+        border-radius: 16px;
+        width: 196px;
+        height: 68px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__button {
+        width: 134px;
+    }
+
+    &__your-txt {
+        color: $base-grey;
+    }
+
+    &__label-container {
+        @include flex;
+
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        padding: 8px;
+        padding-left: 45px;
+        border: 1px solid rgba(28, 24, 25, 0.1);
+        box-sizing: border-box;
+        border-radius: 8px;
+        min-width: 96px;
+        height: 40px;
+        margin-right: 8px;
+
+        &-size {
+            min-width: 40px;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__preview-img {
+        margin-right: 8px;
+        cursor: pointer;
+        margin-bottom: 8px;
+
+        &-active {
+            border: 1px solid $base-blue;
+            border-radius: 8px;
+        }
+    }
+
+    &__preview-container {
+        @include flex;
+
+        flex-wrap: wrap;
+        max-width: 330px;
+    }
+}

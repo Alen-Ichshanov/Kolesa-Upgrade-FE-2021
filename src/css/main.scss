@@ -1,0 +1,9 @@
+.main {
+    @include flex;
+
+    flex: 1 0 auto;
+
+    &__main-container {
+        margin-left: 132px;
+    }
+}

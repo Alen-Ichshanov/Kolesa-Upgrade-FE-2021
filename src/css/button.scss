@@ -1,0 +1,14 @@
+.button {
+    background-color: $base-blue;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    border: none;
+    height: 36px;
+    color: $base-white;
+    cursor: pointer;
+
+    &:hover {
+        @include transition;
+        @include hover-animation;
+    }
+}

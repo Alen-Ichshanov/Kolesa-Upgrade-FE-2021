@@ -1,0 +1,54 @@
+@import url('mixins.scss');
+
+.footer {
+    @include flex;
+
+    width: 100%;
+    background-color: $base-black;
+    color: $base-white;
+    align-items: center;
+    padding: 20px 32px;
+    justify-content: space-between;
+    z-index: 2;
+
+    &__kolesa-copy {
+        margin: 0;
+        font-size: $font-size-16;
+        line-height: $line-height-24;
+        margin-bottom: 8px;
+    }
+
+    &__questions {
+        @include flex;
+        @include flex-column;
+
+        font-size: $font-size-14;
+        line-height: $line-height-24;
+    }
+
+    &__questions-txt {
+        margin: 0;
+    }
+
+    &__footer-button {
+        margin-left: 80px;
+        width: 150px;
+        height: 36px;
+        color: $base-blue;
+        background-color: $base-white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        &:hover {
+            @include transition;
+            @include hover-animation;
+        }
+    }
+
+    &__wrap {
+        @include flex;
+
+        align-items: center;
+    }
+}

@@ -1,0 +1,41 @@
+.points-container {
+    &__button {
+        width: 330px;
+        height: 76px;
+        border-radius: 16px;
+        border: none;
+        display: flex;
+        padding: 12px 24px;
+        align-items: center;
+        cursor: pointer;
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, #fffae7 50%, #ffeeae 50%);
+        transition: background-position 0.5s;
+
+        &:hover {
+            background-position: 0 -100%;
+        }
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        &:first-child {
+            background-image: linear-gradient(to bottom, #eff8eb 50%, #c2e4b2 50%);
+        }
+
+        &:last-child {
+            background-image: linear-gradient(to bottom, #e9f2fb 50%, #a8ccef 50%);
+        }
+    }
+
+    &__img {
+        margin-right: 16px;
+    }
+
+    &__txt {
+        font-weight: $font-weight-600;
+        font-size: 20px;
+        line-height: 32px;
+    }
+}

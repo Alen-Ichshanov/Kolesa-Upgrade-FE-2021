@@ -1,0 +1,59 @@
+.product-card {
+    &__price {
+        font-weight: $font-weight-600;
+        color: $base-blue;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__title {
+        font-weight: $font-weight-600;
+        font-size: $font-size-16;
+        line-height: $line-height-24;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__new-label {
+        @include flex;
+
+        background-color: $base-green;
+        position: absolute;
+        top: 294px;
+        left: 16px;
+        width: 38px;
+        height: 20px;
+        font-size: 13px;
+        line-height: 20px;
+        align-items: center;
+        padding: 4px;
+        color: $base-white;
+    }
+
+    &__description {
+        padding: 16px;
+        margin-right: 0;
+    }
+
+    &__size {
+        font-weight: normal;
+        font-size: $font-size-14;
+        line-height: $line-height-24;
+        color: $base-grey;
+    }
+
+    &__button {
+        display: none;
+        width: 100%;
+    }
+
+    &:hover &__button {
+        display: block;
+    }
+
+    &:hover {
+        @include transition;
+        @include hover-animation;
+    }
+}
