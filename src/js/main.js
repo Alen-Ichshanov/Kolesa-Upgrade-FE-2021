@@ -1,135 +1,9 @@
 import '../css/style.scss';
-
-const clothes = [
-    {
-        id:       0,
-        image:    '/src/assets/tshirt-img.png',
-        isNew:    true,
-        title:    'Футболка "Эволюционируй или сдохни"',
-        price:    220,
-        size:     'Размеры S/M/L',
-        hasSize:  true,
-        hasColor: true,
-        details:  'Брендированная футболка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%',
-    },
-    {
-        id:       1,
-        image:    '/src/assets/tshirt-img.png',
-        isNew:    false,
-        title:    'Футболка "Эволюционируй или сдохни" Limited',
-        price:    220,
-        size:     'Оверсайз',
-        hasColor: true,
-        details:  'Брендированная футболка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%. Переиздание',
-    },
-    {
-        id:       2,
-        image:    '/src/assets/sweatshirt-img.png',
-        isNew:    false,
-        title:    'Толстовка "Kolesa Team post-COVID"',
-        price:    290,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%.',
-    },
-    {
-        id:       3,
-        image:    '/src/assets/sweatshirt-img.png',
-        isNew:    false,
-        title:    'Толстовка "Kolesa Team pre-COVID"',
-        price:    280,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%.',
-    },
-    {
-        id:       4,
-        image:    '/src/assets/hoodie-img.png',
-        isNew:    false,
-        title:    'Худи "Kolesa Minimal"',
-        price:    300,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Минималистичная худи от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%. Минимализм во всей красе',
-    },
-    {
-        id:       5,
-        image:    '/src/assets/hoodie-img.png',
-        isNew:    true,
-        title:    'Худи "Kolesa Minimal vol.2"',
-        price:    320,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Минималистичная худи от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%. Переиздание.',
-    },
-];
-
-const accessories = [
-    {
-        id:       6,
-        image:    '/src/assets/bottle-img.png',
-        isNew:    false,
-        title:    'Бутылка прозрачная "Kolesa Water"',
-        price:    150,
-        size:     'Объем 0.5/0.7/1 л.',
-        hasColor: false,
-        details:  'Брендированная бутылка от Qazaq Republic из прозрачного пластика.',
-    },
-    {
-        id:       7,
-        image:    '/src/assets/bottle-img.png',
-        isNew:    true,
-        title:    'Бутылка матовая "Kolesa Water"',
-        price:    160,
-        size:     'Объем 0.5/0.7/1 л.',
-        hasColor: false,
-        details:  'Брендированная бутылка от Qazaq Republic из матового пластика.',
-    },
-    {
-        id:       8,
-        image:    '/src/assets/cap-img.png',
-        isNew:    true,
-        title:    'Бейсболка "Kolesa Simple vol.2"',
-        price:    200,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Брендированная бейсболка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%. Переиздание.',
-    },
-    {
-        id:       9,
-        image:    '/src/assets/cap-img.png',
-        isNew:    false,
-        title:    'Бейсболка "Kolesa Simple"',
-        price:    200,
-        size:     'Размеры S/M/L',
-        hasColor: true,
-        details:  'Брендированная бейсболка от Qazaq Republic. Материал: Хлопок 80%, Вискоза 20%.',
-    },
-    {
-        id:       10,
-        image:    '/src/assets/notebook-img.png',
-        isNew:    false,
-        title:    'Блокнот "Kolesa Thoughts Out"',
-        price:    220,
-        size:     'Объем 100 стр.',
-        hasColor: false,
-        details:  'Брендированный блокнот от Qazaq Republic на 100 страниц.',
-    },
-    {
-        id:       11,
-        image:    '/src/assets/notebook-img.png',
-        isNew:    false,
-        title:    'Блокнот "Kolesa Thoughts Out"',
-        price:    180,
-        size:     'Объем 50 стр.',
-        hasColor: false,
-        details:  'Брендированный блокнот от Qazaq Republic на 50 страниц.',
-    },
-];
+import { clothes, accessories } from './mocks';
 
 const makeProductCard = (id, image, isNew, title, price, size) => `
 <div class="product-card-wrap product-container__product-card-wrap">
-    <div class="product-card product-card-wrap__product-card" data-index="${id}">
+    <div class="product-card product-card-wrap__product-card hover-card" data-index="${id}">
         <img src="${image}" alt="Фото товара" class="product-card__photo" width="330" height="330">
         ${isNew ? '<span class="product-card__new-label">NEW</span>' : ''}
         <div class="product-card__description">
@@ -137,9 +11,11 @@ const makeProductCard = (id, image, isNew, title, price, size) => `
             <h4 class="product-card__title">${title}</h4>
             <p class="product-card__size">${size}</p>
             <button class="button product-card__button" data-index="${id}">Заказать</button>
-        </div>`;
+        </div>
+    </div>
+</div>`;
 
-const makeProductModal = (id, image, isNew, title, price, size, hasColor, details) => `
+const makeProductModal = (id, image, title, price, size, hasColor, details) => `
 <div class="modal main-container__modal" style="display: none;" id="${id}">
                 <div class="modal__modal-content">
                     <button class="modal__close" data-index="${id}"></button>
@@ -237,11 +113,11 @@ const makeProductModal = (id, image, isNew, title, price, size, hasColor, detail
                                 <h2 class="txt bold-txt">Как выбрать размер:</h2>
                                 <p class="txt">Написать дяде Рику для уточнения.</p>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </div>
+</div>`;
 
 function compareValues(key, order = 'asc') {
     return function (a, b) {
@@ -262,80 +138,69 @@ function compareValues(key, order = 'asc') {
     };
 }
 
-const clothesSorted = clothes.sort(compareValues('isNew', 'desc'));
-const accessoriesSorted = accessories.sort(compareValues('isNew', 'desc'));
-const allConcat = clothes.concat(accessories);
-const allSorted = allConcat.sort(compareValues('isNew', 'desc'));
+clothes.sort(compareValues('isNew', 'desc'));
+accessories.sort(compareValues('isNew', 'desc'));
+const allSorted = clothes.concat(accessories).sort(compareValues('isNew', 'desc'));
 
 const input = document.querySelectorAll('.label-container__input');
 const container = document.querySelector('.js__product-container');
 const modalContainer = document.querySelector('.js__modal-container');
 
-function generateCard(dataArray) {
-    container.innerHTML = '';
-    dataArray.forEach((card) => {
-        const {
-            id, image, isNew, title, price, size,
-        } = card;
-        const cardBlock = makeProductCard(id, image, isNew, title, price, size);
+function openModal(param) {
+    const index = param.getAttribute('data-index');
+    const targetModal = document.getElementById(index);
 
-        container.innerHTML += cardBlock;
-    });
+    targetModal.style.display = 'block';
 }
 
-function generateModal(dataArray) {
+function closeModal(param) {
+    const index = param.getAttribute('data-index');
+    const targetModal = document.getElementById(index);
+
+    targetModal.style.display = 'none';
+}
+
+function createProductCardModal(dataArray) {
     modalContainer.innerHTML = '';
+    container.innerHTML = '';
+
     dataArray.forEach((card) => {
         const {
             id, image, isNew, title, price, size, hasColor, details,
         } = card;
-        const modalBlock = makeProductModal(id, image, isNew, title, price, size, hasColor, details);
+        const cardBlock = makeProductCard(id, image, isNew, title, price, size);
+        const modalBlock = makeProductModal(id, image, title, price, size, hasColor, details);
 
         modalContainer.innerHTML += modalBlock;
+        container.innerHTML += cardBlock;
     });
-}
 
-function modalFunction() {
     const cardOpen = document.querySelectorAll('.product-card');
     const buttonClose = document.querySelectorAll('.modal__close');
 
     cardOpen.forEach((cardTarget) => {
-        cardTarget.addEventListener('click', () => {
-            const index = cardTarget.getAttribute('data-index');
-            const targetModal = document.getElementById(index);
-
-            targetModal.style.display = 'block';
-        });
+        cardTarget.addEventListener('click', () => openModal(cardTarget));
     });
 
     buttonClose.forEach((button) => {
-        button.addEventListener('click', () => {
-            const index = button.getAttribute('data-index');
-            const targetModal = document.getElementById(index);
-
-            targetModal.style.display = 'none';
-        });
+        button.addEventListener('click', () => closeModal(button));
     });
 }
 
-generateCard(allSorted);
-generateModal(allSorted);
-modalFunction();
+createProductCardModal(allSorted);
 
 input.forEach((radio) => {
-    radio.addEventListener('click', () => {
+    radio.addEventListener('change', () => {
+        let dataValue = 0;
+
         if (radio.value === 'clothes') {
-            generateCard(clothesSorted);
-            generateModal(clothesSorted);
-            modalFunction();
+            dataValue = clothes;
         } else if (radio.value === 'accessories') {
-            generateCard(accessoriesSorted);
-            generateModal(accessoriesSorted);
-            modalFunction();
+            dataValue = accessories;
         } else if (radio.value === 'all') {
-            generateCard(allSorted);
-            generateModal(allSorted);
-            modalFunction();
+            dataValue = allSorted;
         }
+
+        createProductCardModal(dataValue);
     });
 });
