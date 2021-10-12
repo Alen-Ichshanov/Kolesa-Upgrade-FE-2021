@@ -191,7 +191,7 @@ createProductCardModal(allSorted);
 
 input.forEach((radio) => {
     radio.addEventListener('change', () => {
-        let dataValue = 0;
+        let dataValue;
 
         if (radio.value === 'clothes') {
             dataValue = clothes;
@@ -201,6 +201,8 @@ input.forEach((radio) => {
             dataValue = allSorted;
         }
 
-        createProductCardModal(dataValue);
+        if (dataValue) {
+            createProductCardModal(dataValue);
+        }
     });
 });
