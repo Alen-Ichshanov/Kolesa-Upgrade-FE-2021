@@ -1,10 +1,15 @@
 .product-card-wrap {
     &__product-card {
+        background-color: $base-white;
         position: absolute;
         width: 330px;
     }
 
     &:not(:nth-child(3n)) {
         margin-right: 24px;
+    }
+
+    &:hover {
+        z-index: 100;
     }
 }
